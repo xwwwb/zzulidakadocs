@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-  <meta charset="UTF-8">
-  <title>轻工大健康打卡脚本</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/docsify/4.11.6/themes/vue.min.css">
-</head>
-<body>
-  <div id="app">加载中</div>
-  <script>
-  window.$docsify = {
-	name: "轻工大打卡脚本",
-    loadSidebar: true,
-	loadNavbar: true,
-	coverpage: true,
-  }
-</script>
-  <!-- Docsify v4 -->
-  <script src="https://cdn.bootcdn.net/ajax/libs/docsify/4.11.6/docsify.min.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>轻工大健康打卡脚本</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/docsify/4.11.6/themes/vue.min.css">
+    <script src="./src/docsify-edit-on-github.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/gitalk/1.7.0/gitalk.min.css">
+  </head>
+  <body>
+    <div id="app">加载中</div>
+    <script>
+      window.$docsify = {
+        plugins: [
+          EditOnGithubPlugin.create('https://github.com/GeekXwb/zzulidakadocs/blob/main/', null, function (file) {
+            if (file.indexOf('en') === -1) {
+              return '在GitHub上编辑'
+            } else {
+              return 'edit on github'
+            }
+          }),
+          function (hook) {
+            var footer = ['<hr/>', '<footer>', '<span>本站自豪的采用了<a href="https://github.com/docsifyjs/docsify" target="_blank">Docsify</a>!</span>', '</footer>'].join('');
+
+            hook.afterEach(function (html) {
+              return html + footer;
+            });
+          }
+        ],
+        name: "轻工大打卡脚本",
+        loadSidebar: true,
+        loadNavbar: true,
+        coverpage: true
+      };
+    </script>
+    <!--评论系统-->
+    <script src="https://cdn.bootcdn.net/ajax/libs/docsify/4.11.6/plugins/gitalk.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/gitalk/1.7.0/gitalk.min.js"></script>
+    <script>
+      const gitalk = new Gitalk({
+        clientID: 'f5f7471a49f6805afc02',
+        clientSecret: '3d3b0fdaf81b2a449c2f956bed59aa7dc10d6b5f',
+        repo: 'dakawebcomment',
+        owner: 'GeekXwb',
+        admin: [
+          'GeekXwb', 'billionray'
+        ],
+        // facebook-like distraction free mode
+        distractionFreeMode: false
+      })
+    </script>
+    <!-- Docsify v4 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/docsify/4.11.6/docsify.min.js"></script>
+  </body>
 </html>

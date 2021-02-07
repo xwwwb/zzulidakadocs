@@ -1,7 +1,7 @@
 * 如何使用
 
-  * [第一 步：配置](configure.md)
-  * [第二步：部署](d.md)
+  * [第一步：配置](configure.md)
+  * [第二步：部署](deploy.md)
   
     
 
@@ -12,10 +12,11 @@
 
 * 部署
 
+  * [部署到Git Action（推荐）](ga.md)
   * [本地运行](local.md)
   * [部署到docker](docker.md)
   * [部署到Linux](linux.md)
-  * [部署到集成服务](cl.md)
+
   
 * 其他
   * [其他信息](others.md)

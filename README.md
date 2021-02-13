@@ -4,7 +4,13 @@
 ## 如何使用
 请点击侧边栏中项目获取帮助
 ## 脚本简介
+
+通过定时发送数据包到学校服务器实现打卡
+
 ## 关于作者
+
+[billionray](https://github.com/billionray) ：国教20级
+[xwwwb](https://github.com/xwwwb) ：数信20级
 
 ## 获取帮助
 

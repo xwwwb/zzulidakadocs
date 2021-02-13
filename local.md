@@ -45,4 +45,5 @@
 填写相应信息并保存进`run.py`
 在powershell窗口执行`python3 run.py`  
 如果出现`DAKA success`说明程序可以运行
+
 ## 设置Windows任务计划执行自动打卡

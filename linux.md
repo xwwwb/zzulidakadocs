@@ -1,6 +1,6 @@
 # Linux服务器原生环境部署
 
-> 本文基于Ubuntu 20.04 
+> 本文基于Ubuntu 20.04 建议有Linux基础的同学阅读
 
 ## Chrome浏览器安装
 

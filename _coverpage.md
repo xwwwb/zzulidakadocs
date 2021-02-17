@@ -8,6 +8,6 @@
 - 🍔多种部署方式
 - 👏后期支持在校打卡
 
-[查看源代码](https://github.com/billionray/ZZULI-COVID-healthreport)
-[开始使用](#helloworld)
+[Github](https://github.com/billionray/ZZULI-COVID-healthreport)
+[Get Started](#helloworld)
 

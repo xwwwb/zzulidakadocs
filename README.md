@@ -9,9 +9,10 @@
 
 ## 关于作者
 
+[xwwwb](https://github.com/xwwwb) ：数信20级
+
 [billionray](https://github.com/billionray) ：国教20级
 
-[xwwwb](https://github.com/xwwwb) ：数信20级
 
 ## 获取帮助
 

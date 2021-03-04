@@ -34,6 +34,7 @@ jobs:
           server: ${{ secrets.server }}
           # ftp username
           username: ${{ secrets.username }}
+          dangerous-clean-slate: true # optional
           # ftp password
           password: ${{ secrets.password }}
           # Server port to connect to (read your web hosts docs)

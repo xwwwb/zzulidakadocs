@@ -23,7 +23,7 @@ git clone https://github.com/xwwwb/ZZULI-healthreport-docker.git # 下载仓库
 cd ZZULI-healthreport-docker
 vi run.py # 修改配置文件
 docker build -t zzulidaka:1.0 . # 使用dockerfile创建镜像
-docker run --rm zzulidaka:1.0 # 运行一次，可以将此命令添加进crontab
+docker run --add-host=msg.zzuli.edu.cn:202.196.0.40 --rm zzulidaka:1.0 # 运行一次，可以将此命令添加进crontab,添加了hosts加速访问
 ```
 
 ### dockerfile讲解

@@ -41,6 +41,7 @@ reporttype|home \| morn \|dorm  分别对应居家打卡、晨检打、归寝打
 | my_sender  | 发件人地址            |
 | SMTPdomain | 发件人SMTP地址（SSL） |
 | SMTPauth   | 发件人SMTP授权码      |
+| moblie   | 手机 |
 
 
 

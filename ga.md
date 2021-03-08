@@ -19,11 +19,11 @@
 ## 基础信息
 name | value
 -|-
-USERNAME |你的学号
-PASSWORD |你的i轻工大密码，默认为zzuli+身份证后六位
-MOBILE |你的手机号
-HOMEMOBILE |家庭电话
-REPORTTYPE |home | morn |dorm  分别对应居家打卡、晨检打、归寝打卡 |
+|USERNAME |你的学号
+|PASSWORD |你的i轻工大密码，默认为zzuli+身份证后六位
+|MOBILE |你的手机号
+|HOMEMOBILE |家庭电话
+|REPORTTYPE |home | morn |dorm  分别对应居家打卡、晨检打、归寝打卡 |
 ## 在校打卡
 name | value
 -|-

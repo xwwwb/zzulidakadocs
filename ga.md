@@ -17,16 +17,18 @@
 
 依次填入：
 ## 基础信息
-name | value
--|-
+
+| name       | value                 |
+| ---------- | --------------------- |
 |USERNAME |你的学号
 |PASSWORD |你的i轻工大密码，默认为zzuli+身份证后六位
 |MOBILE |你的手机号
 |HOMEMOBILE |家庭电话
 |REPORTTYPE |home | morn |dorm  分别对应居家打卡、晨检打、归寝打卡 |
 ## 在校打卡
-name | value
--|-
+
+| name       | value                 |
+| ---------- | --------------------- |
 |REGION: | 校区 例：东风校区、科学校区、禹州实习训练基地、校外走读|
 |AREA: |例：宿舍区 一区、二区、秋实区、丰华区 |
 |BUILD: |例：楼号 5号楼、1号楼 |
@@ -35,8 +37,9 @@ name | value
 |SCHOOLLAT: | 纬度 小数点后五位 输入时无引号 |
 |SCHOOLLON: | 精度 小数点后五位 输入时无引号 |
 ## 居家打卡信息
-name | value
--|-
+
+| name       | value                 |
+| ---------- | --------------------- |
 |GPS |GPS定位的地址，例如：XX省XX市XX区XX街道XX小区|
 |LAT |小数点后五位 纬度 输入时无引号|
 |LON |小数点后五位 经度 输入时无引号|

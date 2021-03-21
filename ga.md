@@ -56,13 +56,18 @@
 
 | name       | value                 |
 | ---------- | --------------------- |
-| MAILFLAG   | 是否需要右键提醒，输入1为需要，0为不需要|
+| MAILFLAG   | 是否需要邮件提醒，输入1为需要，0为不需要|
 | MYUSER     | 收件人地址            |
 | MYSENDER   | 发件人地址            |
 | SMTPDOMAIN | 发件人SMTP地址（SSL） |
 | SMTPAUTH   | 发件人SMTP授权码      |
 
 
+# 开启Github Action
+点击仓库的Action按钮
 
+点击绿色按钮开启Action
+
+点击 Enable workflow 开启工作流
 
 未完待续....

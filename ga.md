@@ -1,6 +1,6 @@
 # Fork仓库
 
-访问本项目GitHub仓库：[点我进入](https://github.com/billionray/ZZULI-healthreport]
+访问本项目GitHub仓库：[点我进入](https://github.com/billionray/ZZULI-healthreport)
 
 点击右上角按钮注册并登录Github
 
@@ -24,19 +24,21 @@
 |PASSWORD |你的i轻工大密码，默认为zzuli+身份证后六位
 |MOBILE |你的手机号
 |HOMEMOBILE |家庭电话
-|REPORTTYPE |home | morn |dorm  分别对应居家打卡、晨检打、归寝打卡 |
 ## 在校打卡
 
 | name       | value                 |
 | ---------- | --------------------- |
-|REGION: | 校区 例：东风校区、科学校区、禹州实习训练基地、校外走读|
-|AREA: |例：宿舍区 一区、二区、秋实区、丰华区 |
-|BUILD: |例：楼号 5号楼、1号楼 |
-|DORM: | 宿舍号（仅数字）|
-|SCHOOLGPS: | 学校GPS地址，详细一点，例如：河南省郑州市金水区郑州轻工业大学第二学生园区|
-|SCHOOLLAT: | 纬度 小数点后五位 输入时无引号 |
-|SCHOOLLON: | 精度 小数点后五位 输入时无引号 |
+|REGION | 校区 例：东风校区、科学校区、禹州实习训练基地、校外走读|
+|AREA |例：宿舍区 一区、二区、秋实区、丰华区 |
+|BUILD |例：楼号 5号楼、1号楼 |
+|DORM | 宿舍号（仅数字）|
+|SCHOOLGPS | 学校GPS地址，详细一点，例如：河南省郑州市金水区郑州轻工业大学第二学生园区|
+|SCHOOLLAT| 纬度 小数点后五位 输入时无引号 |
+|SCHOOLLON | 精度 小数点后五位 输入时无引号 |
 ## 居家打卡信息
+> 默认开启的是在校打卡  
+如果需要居家打卡，请到`run.py`中寻找`home=0`  
+并将`home=0`改为`home=1`
 
 | name       | value                 |
 | ---------- | --------------------- |

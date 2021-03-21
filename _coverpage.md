@@ -1,6 +1,6 @@
 ![logo](./images/logo2.png)
 
-# 轻大健康打卡脚本 <small>1.0</small>
+# 轻大健康打卡脚本 <small>1.2</small>
 
 > 🎉A script that can help you submit health information automatically🎉
 

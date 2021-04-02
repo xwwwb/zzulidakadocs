@@ -72,9 +72,9 @@ sudo apt install python3 python3-pip -y && pip3 install selenium requests
 
 ## 打卡部署
 
-上传仓库中的`run.py`以及`Services.py`文件
+上传仓库中的所有文件
 
-补充`run.py`
+[修改data.json文件](./#/local?id=修改配置文件)
 
 运行脚本
 

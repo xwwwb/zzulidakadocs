@@ -39,12 +39,37 @@
 选择相应的Chrome版本  
 下载`chromedriver_win32.zip`  
 解压并将chromedriver丢入`C:\Windows\System32`文件夹（丢入其他path记录的文件夹也可以）
-## 填写配置文件
-右键选择项目中的`run.py`文件  
+## 修改配置文件
+右键选择项目中的`data.json`文件  
 打开方式选择记事本（如果使用富文本编辑器当然更好啦）
-填写相应信息并保存进`run.py`
+按照如下方式编辑，其中填入的值尽量与官方打卡页面显示的数据相同
+```json
+{
+  "username": "", #填写学号
+  "password": "", #填写i轻工大密码，默认zzuli+身份证后六位
+  "mobile": "", #填写手机号
+  "homemobile": "", #家庭电话
+  "gpslocation": "", #GPS定位的地址，例如：XX省XX市XX区XX街道XX小区
+  "lat": "0", #小数点后五位 纬度 
+  "lon": "0", #小数点后五位 纬度 
+  "region": "", #校区 例：东风校区、科学校区、禹州实习训练基地、校外走读
+  "area": "", #例：宿舍区 一区、二区、秋实区、丰华区
+  "build": "", #例：楼号 5号楼、1号楼
+  "dorm": "", #宿舍号（仅数字）
+  "schoolgps": "", #学校GPS地址，详细一点，例如：河南省郑州市金水区郑州轻工业大学第二学生园区
+  "schoollat": "0", #学校纬度 小数点后五位
+  "schoollon": "0", #学校精度 小数点后五位
+  "my_user": "", #收件人地址 
+  "my_sender": "", #发件人地址
+  "SMTPdomain": "", #发件人SMTP地址（SSL）
+  "SMTPauth": "", #发件人SMTP授权码
+  "noticetype": "" #是否需要邮件提醒，输入1为需要，0为不需要
+}
+```
+
+## 测试运行
 在powershell窗口执行`python3 run.py`  
-如果出现`DAKA success`说明程序可以运行
+如果出现`mission success`说明程序可以运行
 
 ## 设置Windows任务计划执行自动打卡
 

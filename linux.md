@@ -74,7 +74,7 @@ sudo apt install python3 python3-pip -y && pip3 install selenium requests
 
 上传仓库中的所有文件
 
-[修改data.json文件](./#/local?id=修改配置文件)
+[修改data.json文件](https://daka.xwwwb.com/#/local?id=%e5%a1%ab%e5%86%99%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6)
 
 运行脚本
 
@@ -82,7 +82,7 @@ sudo apt install python3 python3-pip -y && pip3 install selenium requests
 python3 run.py
 ```
 
-若输出DAKA success
+若输出mission success
 
 说明打卡成功
 

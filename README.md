@@ -7,6 +7,8 @@
 
 通过定时发送数据包到学校服务器实现打卡
 
+详情请移步：[概述](https://daka.xwwwb.com/#/index)
+
 ## 关于作者
 
 [xwwwb](https://github.com/xwwwb) ：数信20级

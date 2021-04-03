@@ -6,7 +6,7 @@
 
 - 🎨由Python编写
 - 🍔多种部署方式
-- 👏后期支持在校打卡
+- 👏支持在校晨检归寝打卡&居家打卡
 
 [Github](https://github.com/billionray/ZZULI-COVID-healthreport)
 [Get Started](#helloworld)

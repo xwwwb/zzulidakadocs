@@ -39,7 +39,7 @@
 |LAT |小数点后五位 纬度 |
 |LON |小数点后五位 经度 |
 |VACCINE|未接种/未完成接种/已完成接种
-|NUCLEICACIDTEST|未检测/一次/两次....
+|NUCLEICACIDTEST|未检测/1次/2次/3次/4次/5次/6次/更多次
 ## 在校打卡
 
 | name       | value                 |

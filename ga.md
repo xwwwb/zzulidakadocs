@@ -38,7 +38,8 @@
 |GPS |GPS定位的地址，例如：XX省XX市XX区XX街道XX小区|
 |LAT |小数点后五位 纬度 |
 |LON |小数点后五位 经度 |
-
+|VACCINE|未接种/未完成接种/已完成接种
+|NUCLEICACIDTEST|未检测/一次/两次....
 ## 在校打卡
 
 | name       | value                 |

@@ -23,7 +23,7 @@
 打开保存项目的文件夹  
 按着`Shift键`在文件夹空白处右键  
 选择`在此处打开powershell窗口`  
-输入`pip install selenium requests`命令安装依赖
+输入`pip install -r requirements.txt`命令安装依赖
 
 ## 安装其他依赖
 本项目需要Chrome及Chromedriver  

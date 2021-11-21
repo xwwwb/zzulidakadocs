@@ -65,7 +65,7 @@ Ubuntu仓库中提供有编译完成的Python安装包
 可以直接通过apt下载安装
 
 ```shell
-sudo apt install python3 python3-pip -y && pip3 install selenium requests
+sudo apt install python3 python3-pip -y && pip3 install -r requirements.txt
 ```
 
 上述命令安装Python3以及打卡脚本所需依赖

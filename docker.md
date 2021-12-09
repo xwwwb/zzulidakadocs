@@ -1,3 +1,6 @@
+> 本教程已经长时间没更新 请不要参考使用
+> 推荐使用GitHub Action部署方式部署
+
 # 使用Docker部署到Linux服务器
 
 使用docker可以快速启动打卡环境

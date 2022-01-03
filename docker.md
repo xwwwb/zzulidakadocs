@@ -19,33 +19,35 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 
 更多有关docker安装的问题请移步 [这里](https://yeasy.gitbook.io/docker_practice/install/ubuntu)
 
-### 环境配置
-
-```shell
-git clone https://github.com/xwwwb/ZZULI-healthreport-docker.git # 下载仓库
-cd ZZULI-healthreport-docker
-vi data.json # 修改配置文件，详情请看：https://daka.xwwwb.com/#/local?id=修改配置文件
-docker build -t zzulidaka:1.0 . # 使用dockerfile创建镜像
-docker run --add-host=msg.zzuli.edu.cn:202.196.0.40 --rm zzulidaka:1.0 # 运行一次，可以将此命令添加进crontab,添加了hosts加速访问
+### 这里给出dockerfile 有兴趣的同学可以自己折腾 就不写详细教程了
 ```
+FROM ubuntu
+COPY chromedriver /bin/
+## 这里all.zip是代码压缩包 其中包括 https://github.com/billionray/ZZULI-healthreport 全部python文件以及chrome的deb包 放入deb包后请自行修改下面地址
+COPY all.zip /root/ 
+## 这里是打卡配置项文件
+COPY data.json /root/ 
 
-### dockerfile讲解
+RUN  sed -i s@/archive.ubuntu.com/@/mirrors.163.com/@g /etc/apt/sources.list
 
+ENV TZ=Asia/Shanghai \
+    DEBIAN_FRONTEND=noninteractive
+
+RUN apt update 
+RUN apt install -y tzdata zip python3 python3-pip
+RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime 
+RUN echo ${TZ} > /etc/timezone 
+RUN dpkg-reconfigure --frontend noninteractive tzdata  
+RUN unzip /root/all.zip  -d /root/ 
+RUN dpkg -i /root/chromev88.deb ;exit 0 
+RUN apt --fix-broken install -y
+RUN rm -rf /var/lib/apt/lists/*
+	
+RUN pip3 install -r /root/requirements.txt -i https://pypi.douban.com/simple
+
+CMD python3 /root/run.py
 ```
-FROM ubuntu # 构建自Ubuntu
-COPY chromev88.deb /root # 这里使用了Chrome 88
-COPY chromedriver /bin # 这里是Chrome 88对应的chromedriver
-COPY run.py /root # 打卡脚本
-COPY Services.py /root # 打卡脚本
-COPY sources.list /etc/apt/ # 修改apt软件源为网易镜像站加速apt访问，国外服务器可注释这一行
-RUN cd /root && dpkg -i chromev88.deb ; exit 0 # 安装Chrome 这里可能会报错为了保证build继续加入 exit 0
-RUN apt update # 更新软件列表
-RUN DEBIAN_FRONTEND=noninteractive apt --fix-broken install -y # 修复Chrome依赖完成Chrome安装
-RUN apt install python3 python3-pip -y && pip3 install selenium requests # 安装Python3 以及所需依赖
-RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime # 修改时区为上海
-RUN dpkg-reconfigure -f noninteractive tzdata # 修改时区
-CMD python3 /root/run.py # 运行镜像时执行打卡脚本
-```
+### 有兴趣的同学可以自行联系开发者取得帮助
 
 更多有关docker的问题请移步 [Docker —— 从入门到实践](https://yeasy.gitbook.io/docker_practice/)
 

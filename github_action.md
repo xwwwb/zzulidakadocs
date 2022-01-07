@@ -2,10 +2,10 @@
 
 > 本页需要填写的内容 可以对着学校的打卡页填写 确保填写的字段和学校打卡页的一致
 <html>
-<video style="width:100%" src="http://r55zyo93l.hn-bkt.clouddn.com/%E6%89%93%E5%8D%A1%E6%8C%87%E5%AF%BC.MP4" controls></video>
+<video style="width:100%" src="http://file3.xwwwb.com/打卡指导.MP4" controls></video>
 </html>
 
-> 视频中仅填写了三个字段 仅做演示 自己使用时请按教程填写完整
+如果出现视频打不开的情况 请[点击这里](http://file3.xwwwb.com/打卡指导.MP4)
 
 # Fork仓库
 

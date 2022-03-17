@@ -26,3 +26,5 @@ Website：<a target=_blank href="https://www.xwwwb.com/">点我进入</a>
 或者：
 
 E-mail `223223223@outlook.com`
+
+![Alt](https://repobeats.axiom.co/api/embed/0fc8edb8e89824cdcc0be64c0913b1d19788cd85.svg "Repobeats analytics image")
